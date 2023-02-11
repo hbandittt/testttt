@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<script src="scipt.js"></script>
+<body onload="alert('Hello!')">
+  <header>
+    <h1>About Me</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>Hello, my name is Hamza and I am a Graphic Designer!. I was born and raised in Toronto and still live here till this day!. I have a passion for Editing, and I am always seeking new opportunities to learn and grow in my field. My trade mark is also Bandit!</p>
+      <img src="./images/ninja_1f977.png" alt="ninja_1f977">
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <h3>My highest level of education would be a highschool diploma</h3>
+          <p>i currently attend humber college, and will hopefully be graduating in 2025</p>
+          <img src="./images/istockphoto-1349297974-170667a.jpg" alt="happy">
+        </li>
+      </ul>
+    </section>
+    <section id="interests">
+      <h2>Interests</h2>
+      <p>In my free time, I enjoy [Your interests]. I also like to spend time exploring new places, trying new foods, and reading books. </p>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li> i am great with leading!</li>
+        <li> I am well organized!</li>
+        <li> I am great at anything i put my mind to!</li>
+      </ul>
+    </section>
+    <button id="learn-more-button">Learn More</button>
+        <p id="extra-info" style="display: none;">Im the best at everything i do!!!!!!</p>
+      </section>
+      <section id="profile-picture">
+        <img id="profile-picture" src="./images/istockphoto-1351445530-170667a.jpg" alt="Profile Picture">
+      </section>
+      <section id="greeting">
+        <h2>Greeting</h2>
+        <p>Enter your name:</p>
+        <input id="name-input" type="text">
+        <button id="submit-button">Submit</button>
+  </main>
+  <footer>
+    <p>Copyright &copy; Hamza Mohamed 2023</p>
+  </footer>
+ <script>
+      window.onload = function() {
+        alert("Hello!");
+
+        let learnMoreButton = document.getElementById("learn-more-button");
+        let extraInfo = document.getElementById("extra-info");
+        learnMoreButton.addEventListener("click", function() {
+          extraInfo.style.display = "block";
+        });
+
+        let profilePicture = document.getElementById("profile-picture");
+        profilePicture.addEventListener("mouseover", function() {
+          profilePicture.src = "not working ):";
+        });
+        profilePicture.addEventListener("mouseout", function() {
+          profilePicture.src = "profile-picture.jpg";
+        });
+
+        let input = document.getElementById("name-input");
+        let submitButton = document.getElementById("submit-button");
+        submitButton.addEventListener("click", function() {
+          let name = input.value;
+          alert("Greetings, " + name);
+        });
+      };
+    </script>
